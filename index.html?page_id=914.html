@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slides and Videos | OWASP AppSec Europe &#039;16</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+
+
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="OWASP AppSec Europe &#039;16 &raquo; Feed" href="/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="OWASP AppSec Europe &#039;16 &raquo; Comments Feed" href="/?feed=comments-rss2" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.14"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='siteorigin-panels-front-css'  href='wp-content/plugins/siteorigin-panels/css/front.css%3Fver=2.4.25.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_stylesheet-css'  href='wp-content/plugins/captcha/css/front_end_style.css%3Fver=4.2.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css%3Fver=4.7.14.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_desktop_style-css'  href='wp-content/plugins/captcha/css/desktop_style.css%3Fver=4.2.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='moesia-bootstrap-css'  href='wp-content/themes/moesia/css/bootstrap/bootstrap.min.css%3Fver=1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='moesia-style-css'  href='wp-content/themes/moesia/style.css%3Fver=4.7.14.css' type='text/css' media='all' />
+<style id='moesia-style-inline-css' type='text/css'>
+.services-area { background-color:  !important; }
+.services-area .widget-title { color: ; }
+.services-area .widget-title:after { border-color: #a52222; }
+.service-icon { background-color: #a52222; }
+.service-title, .service-title a { color: #a52222; }
+.service-desc { color: ; }
+.employees-area { background-color:  !important; }
+.employees-area .widget-title { color: ; }
+.employees-area .widget-title:after { border-color: #a52222; }
+.employee-name { color: ; }
+.employee-position, .employee-social a { color: ; }
+.employee-desc { color: ; }
+.testimonials-area { background-color:  !important; }
+.testimonials-area .widget-title { color: ; }
+.testimonials-area .widget-title:after { border-color: #a52222; }
+.client-function { color: ; }
+.client-name { color: ; }
+.testimonial-body { background-color: ; }
+.testimonial-body:after { border-top-color: ; }
+.testimonial-body { color: ; }
+.skills-area { background-color:  !important; }
+.skills-area .widget-title { color: ; }
+.skills-area .widget-title:after { border-color: #a52222; }
+.skill-bar div { background-color: #a52222; }
+.skills-desc, .skills-list { color: ; }
+.facts-area { background-color:  !important; }
+.facts-area .widget-title { color: ; }
+.facts-area .widget-title:after { border-color: #a52222; }
+.fact { color: #a52222; }
+.fact-name { color: ; }
+.clients-area { background-color:  !important; }
+.clients-area .widget-title { color: ; }
+.clients-area .widget-title:after { border-color: #a52222; }
+.slick-prev:before, .slick-next:before { color: #a52222; }
+.blockquote-area { background-color:  !important; }
+.blockquote-area .widget-title { color: ; }
+.blockquote-area .widget-title:after { border-color: #a52222; }
+.blockquote-area blockquote:before { color: #a52222; }
+.blockquote-area blockquote { color: ; }
+.social-area { background-color:  !important; }
+.social-area .widget-title { color: ; }
+.social-area .widget-title:after { border-color: #a52222; }
+.social-area a:before { color: #a52222; }
+.projects-area { background-color:  !important; }
+.projects-area .widget-title { color: ; }
+.projects-area .widget-title:after { border-color: #a52222; }
+.project-image { background-color: #a52222; }
+.link-icon, .pp-icon { color: #a52222; }
+.latest-news-area { background-color:  !important; }
+.latest-news-area .widget-title { color: ; }
+.latest-news-area .widget-title:after { border-color: #a52222; }
+.latest-news-area .entry-title a { color: ; }
+.blog-post { color: ; }
+.all-news { color: ; border-color: ; }
+.action-area .widget-title { color: #444444; }
+.action-area .widget-title:after { border-color: #a52222; }
+.action-text { color: #444444; }
+.call-to-action { background-color: #a52222; }
+.call-to-action { box-shadow: 0 5px 0 #c2503d; }
+.welcome-desc { color: #ffffff; }
+.welcome-button { background-color: #a52222; }
+.welcome-button { box-shadow: 0 5px 0 #722121; }
+.welcome-button:active { box-shadow: 0 2px 0 #722121; }
+.post-navigation .nav-previous, .post-navigation .nav-next, .paging-navigation .nav-previous, .paging-navigation .nav-next, .comment-respond input[type="submit"], ::selection { background-color: #a52222; }
+.main-navigation a:hover, .entry-title a:hover, .entry-meta a:hover, .entry-footer a:hover, .social-widget li a::before, .author-social a, .widget a:hover, blockquote:before { color: #a52222; }
+.panel.widget .widget-title:after, .so-panel.widget .widget-title:after { border-color: #a52222; }
+.site-title a { color: ; }
+.site-description { color: ; }
+.entry-title, .entry-title a { color: ; }
+body { color: #7c7c7c; }
+.top-bar { background-color: ; }
+.main-navigation a { color: ; }
+.footer-widget-area, .site-footer { background-color: ; }
+.welcome-logo { max-width:300px; }
+.site-branding, .main-navigation li { padding-top:20px; padding-bottom:20px; }
+.menu-toggle { margin:20px 0;}
+@media screen and (min-width: 992px) { .is-sticky .site-branding, .is-sticky .main-navigation li { padding-top:10px; padding-bottom:10px; } }
+.top-bar { position: relative !important; }
+@media only screen and (min-width: 1025px) { .has-banner,.has-banner::after { max-height:1440px; } }
+@media only screen and (min-width: 1199px) { .has-banner,.has-banner::after { max-height:1440px; } }
+@media only screen and (min-width: 991px) { .welcome-info { top:100px; } }
+@media only screen and (min-width: 1199px) { .welcome-info { top:100px; } }
+
+</style>
+<link rel='stylesheet' id='moesia-roboto-condensed-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A700&amp;ver=4.7.14' type='text/css' media='all' />
+<link rel='stylesheet' id='moesia-roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto%3A400%2C400italic%2C700%2C700italic&amp;ver=4.7.14' type='text/css' media='all' />
+<link rel='stylesheet' id='moesia-font-awesome-css'  href='wp-content/themes/moesia/fonts/font-awesome.min.css%3Fver=4.7.14.css' type='text/css' media='all' />
+<link rel='stylesheet' id='moesia-animations-css'  href='wp-content/themes/moesia/css/animate/animate.min.css%3Fver=4.7.14.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sccss_style-css'  href='?sccss=1&#038;ver=4.7.14' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<script type='text/javascript' src='wp-content/plugins/stop-user-enumeration/js/commentauthor.js%3Fver=4.7.14'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/waypoints.min.js%3Fver=1'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/jquery.nicescroll.min.js%3Fver=1'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/nicescroll-init.js%3Fver=1'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/wow.min.js%3Fver=1'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/wow-init.js%3Fver=1'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/jquery.sticky.js%3Fver=1'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/scripts.js%3Fver=1'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/jquery.fitvids.js%3Fver=1'></script>
+<link rel='https://api.w.org/' href='/?rest_route=/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.14" />
+<link rel="canonical" href="/?page_id=914" />
+<link rel='shortlink' href='/?p=914' />
+<link rel="alternate" type="application/json+oembed" href="/?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=%2F%3Fpage_id%3D914" />
+<link rel="alternate" type="text/xml+oembed" href="/?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=%2F%3Fpage_id%3D914&#038;format=xml" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/moesia/js/html5shiv.js"></script>
+<![endif]-->
+			<style type="text/css">
+				@media only screen and (min-width: 1025px) {	
+					.has-banner:after {
+					    					    	background-image: url(wp-content/uploads/2016/02/Rome_bg_OWASP.jpg);
+					    					}
+				}		
+			</style>
+	</head>
+
+<body class="page-template-default page page-id-914 group-blog">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="index.html%3Fpage_id=914.html#content">Skip to content</a>
+
+								<header id="masthead" class="site-header" role="banner">
+											</header><!-- #masthead -->
+		<div class="top-bar">
+			<div class="container">
+				<div class="site-branding col-md-4"><h1 class="site-title"><a href="/" rel="home">OWASP AppSec Europe &#039;16</a></h1><h2 class="site-description"></h2></div><button class="menu-toggle btn"><i class="fa fa-bars"></i></button>
+</div></nav></div></div>
+						<div id="content" class="site-content clearfix container">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-914" class="post-914 page type-page status-publish hentry">
+
+	
+	<header class="entry-header">
+		<h1 class="entry-title">Slides and Videos</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<h2>Day 1</h2>
+<ul>
+<li>Aaron Weaver &#8211; Pipeline Automation: <a href="wp-content/uploads/2016/07/AppSecEU2016-Aaron-Weaver-Pipeline-Automation.pptx">[Slides]</a> [Video]</li>
+<li>Achim Brucker &#8211; Using Third Party Components: <a href="wp-content/uploads/2016/07/AppSecEU2016-Achim-Brucker-Using-Third-Party-Components.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=zUDaP0m-gFU&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=2">[Video]</a></li>
+<li>Adam Muntner &#8211; Open Source Approaches to Security: <a href="wp-content/uploads/2016/07/AppSecEU2016-Adam-Muntner-Open-Source-Approaches-to-Security.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=RuDYBY3x06M&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=3">[Video]</a></li>
+<li>Ajin Abraham &#8211; Automated Mobile Assessment: <a href="wp-content/uploads/2016/07/AppSecEU2016-Ajin-Abraham-Automated-Mobile-Assessment.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=h00v1euuFXg&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=4">[Video]</a></li>
+<li>Alvaro Muñoz, Christian Schneider &#8211; Surviving the Java serialization apocalypse: [Slides] <a href="https://www.youtube.com/watch?v=m1sH240pEfw&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=12">[Video]</a></li>
+<li>Andreas Falk &#8211; Building Native Cloud Apps: <a href="wp-content/uploads/2016/07/AppSecEU2016-Andreas-Falk-Building-Native-Cloud-Apps.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=RcofDO079NM&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=6">[Video]</a></li>
+<li>Arne Swinnen &#8211; Tales of a Bug Bounty Hunter: <a href="wp-content/uploads/2016/07/AppSecEU2016-Arne-Swinnen-Tales-of-a-Bug-Bounty-Hunter.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=jnEZWuJ39Fw&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=7">[Video]</a></li>
+<li>Christian Mainka &#8211; Breaking And Fixing: <a href="wp-content/uploads/2016/07/AppSecEU2016-Christian-Mainka-Breaking-And-Fixing.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=9ZqPOQUW_1M&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=11">[Video]</a></li>
+<li>Dan Cornell &#8211; Source Assisted PenTesting: <a href="wp-content/uploads/2016/07/AppSecEU2016-Dan-Cornell-Source-Assisted-PenTesting.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=UWujTdi9J2o&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=14">[Video]</a></li>
+<li>Daniel Kefer &#8211; Addressing Security Requirements: <a href="wp-content/uploads/2016/07/AppSecEU2016-Daniel-Kefer-Addressing-Security-Requirements.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=6N__PgMSfYU&amp;index=16&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL">[Video]</a></li>
+<li>David Lindner, Jack Mannino &#8211; Dont Touch Me That Way: [Slides] <a href="https://www.youtube.com/watch?v=_6sTR-mLOk4&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=16">[Video]</a></li>
+<li>David Rook &#8211; Leveling an Application Security Program: <a href="wp-content/uploads/2016/07/AppSecEU2016-David-Rook-Leveling-an-Application-Security-Program.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=-_GLHlfSLZw&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=17">[Video]</a></li>
+<li>Dinis Cruz &#8211; Using Jira To Manage Risks: <a href="wp-content/uploads/2016/07/AppSecEU2016-Dinis-Cruz-Using-Jira-To-Manage-Risks.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=0iw8e29pzno&amp;index=19&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL">[Video]</a></li>
+<li>Dirk Wetter &#8211; Calm down HTTPS is not a VPN: [Slides] <a href="https://www.youtube.com/watch?v=6ZiJvlMeb-E&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=19">[Video]</a></li>
+<li>Felix Leder &#8211; Bug Hunting on the Dark Side: [Slides] <a href="https://www.youtube.com/watch?v=4aRkZJ4vzAk&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=20">[Video]</a></li>
+<li>Giancarlo Pellegrino &#8211; Compression Bombs: <a href="wp-content/uploads/2016/07/AppSecEU2016-Giancarlo-Pellegrino-Compression-Bombs.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=eChViaOVAKo&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=21">[Video]</a></li>
+<li>Glen ten Cate &#8211; OWASP Security Knowledge Framework &#8211; Making the web secure by design: [Slides] <a href="https://www.youtube.com/watch?v=EPp5rCdXwm0&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=22">[Video]</a></li>
+<li>John Dickson &#8211; Making OpenSAMM More Effective: <a href="wp-content/uploads/2016/07/AppSecEU2016-John-Dickson-Making-OpenSAMM-More-Effective.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=ToE5THthpEU&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=28">[Video]</a></li>
+<li>Julia Knecht &#8211; SAASy SPLC: <a href="wp-content/uploads/2016/07/AppSecEU2016-Julia-Knecht-SAASy-SPLC.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=0E8WgykFfQ4&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=32">[Video]</a></li>
+<li>L. Compagna, A. Sudhodanan, A. Armando, R. Carbone &#8211; Attack Patterns for Black-Box Det: <a href="wp-content/uploads/2016/07/Blast_AppSecEU-2016.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=6Rpgbsypa5w&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=35">[Video]</a></li>
+<li>Lotfi ben Othmane &#8211; Prediction Models: <a href="wp-content/uploads/2016/07/AppSecEU2016-Lofti-Othmane-Prediction-Models.pdf">[Slides]</a> [Video]</li>
+<li>Michele Spagnuolo, Lukas Weichselbaum &#8211; Making CSP great again: <a href="https://speakerdeck.com/mikispag/making-csp-great-again-michele-spagnuolo-and-lukas-weichselbaum">[Slides]</a> <a href="https://www.youtube.com/watch?v=uf12a-0AluI&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=37">[Video]</a></li>
+<li>Oliver Lavery &#8211; Framework Security &#8211; Have You Hugged A Developer Today: [Slides] <a href="https://www.youtube.com/watch?v=jsKqrDcawYE&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=39">[Video]</a></li>
+<li>Scott Davis &#8211; Scanning with Swagger: <a href="wp-content/uploads/2016/07/AppSecEU2016-Scott-Davis-Scanning-with-Swagger.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=SnxjIY9vDG4&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=41">[Video]</a></li>
+<li>Simone Onofri &#8211; Security Project Management: <a href="wp-content/uploads/2016/07/AppSecEU2016-Simone-Onofri-Security-Project-Management.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=cTfXm-On8bY&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=43">[Video]</a></li>
+<li>Timur Khrotko &#8211; Lets Skip The Pentest: <a href="wp-content/uploads/2016/07/AppSecEU2016-Timur-Khrotko-Lets-Skip-The-Pentest.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=r5VGmo4zaWw&amp;index=44&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL">[Video]</a></li>
+<li>Tobias Gondrom &#8211; Ciso Survey: <a href="wp-content/uploads/2016/07/AppSecEU2016-Tobias-Gondrom-Ciso-Survey.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=7vgbjA5ZESU&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=44">[Video]</a></li>
+<li>Tom Van Goethem &#8211; The Timing Attacks They Are A Changin: <a href="wp-content/uploads/2016/07/AppSecEU2016-Tom-Van-Goethem-The-Timing-Attacks-They-Are-A-Changin.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=U7GeLw_nAOc&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=45">[Video]</a></li>
+</ul>
+<h2>Day 2</h2>
+<ul>
+<li>Abhay Bhargav &#8211; SecDevOps: <a href="wp-content/uploads/2016/07/AppSecEU2016-Abhay-Bhargav-SecDevOps__.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=qrTShcOW8kM&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=1">[Video]</a></li>
+<li>Amit Ashbel &#8211; Game of Hacks: <a href="wp-content/uploads/2016/07/AppSecEU2016-Amit-Ashbel-Game-of-Hacks.pptx">[Slides]</a> [Video]</li>
+<li>Amol Sarwate &#8211; 2016 State of Vulnerability Exploits: <a href="wp-content/uploads/2016/07/AppSecEU2016-Amol-Sarwate-2016-State-of-Vulnerability-Exploits.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=Qg6AJt7y29A&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=5">[Video]</a></li>
+<li>Ben Stock &#8211; From Facepalm To Brain Bender: <a href="wp-content/uploads/2016/07/AppSecEU2016-Ben-Stock-From-Facepalm-To-Brain-Bender.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=DVOv3hv7ULQ&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=8">[Video]</a></li>
+<li>Chris Romeo &#8211; AppSec Awareness: <a href="wp-content/uploads/2016/07/AppSecEU2016-Chris-Romeo-AppSec-Awareness.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=nWZaap-wejM&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=9">[Video]</a></li>
+<li>Christian Wressengger &#8211; Flash-based Malware: <a href="wp-content/uploads/2016/07/AppSecEU2016-Christian-Wressengger-Flash-based-Malware.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=VX3SeN8pYd4&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=13">[Video]</a></li>
+<li>Christopher Spaeth &#8211; From DTD to XXE: <a href="wp-content/uploads/2016/07/AppSecEU2016-Christopher-Spaeth-From-DTD-to-XXE.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=2O874A5Uj3w&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=10">[Video]</a></li>
+<li>Grant McCracken &#8211; Running a Bug Bounty: <a href="wp-content/uploads/2016/07/AppSecEU2016-Grant-McCracken-Running-a-Bug-Bounty.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=uN-R8txJ2q0&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=23">[Video]</a></li>
+<li>Ikka Turunen &#8211; Chain of Trust: <a href="wp-content/uploads/2016/07/AppSecEU2016-Ikka-Turunen-Chain-of-Trust.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=JjaDZ5Ac3Uw&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=24">[Video]</a></li>
+<li>J. Rose, R. Sulatycki &#8211; Grow up AppSec-A case study of maturity models and metrics: [Slides] <a href="https://www.youtube.com/watch?v=-XI2DL2Uulo&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=31">[Video]</a></li>
+<li>Jacky Fox &#8211; Women in Cyber: <a href="wp-content/uploads/2016/07/AppSecEU2016-Jacky-Fox-Women-in-Cyber.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=bqlkKTQCKs8&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=25">[Video]</a></li>
+<li>Jakub Kaluzny &#8211; Big problems with big data &#8211; Hadoop interfaces security: [Slides] <a href="https://www.youtube.com/watch?v=ClXKGI8AzTk&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=26">[Video]</a></li>
+<li>Johannes Dahse &#8211; Static Code Analysis of Complex PHP Application Vulnerabilities: [Slides] <a href="https://www.youtube.com/watch?v=CwbF0o13GdA&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=27">[Video]</a></li>
+<li>John Kozyrakis &#8211; Certificate Pinning: <a href="wp-content/uploads/2016/07/AppSecEU2016-John-Kozyrakis-Certificate-Pinning.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=Hn-1-crlEz8&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=29">[Video]</a></li>
+<li>Jonathan Kuskos &#8211; The Top 10 Web Hacks of 2015: [Slides] <a href="https://www.youtube.com/watch?v=jsBdrJT_qIU&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=30">[Video]</a></li>
+<li>Juraj Somorovsky &#8211; Practical Attacks on Real World Crypto Implementations : <a href="wp-content/uploads/2016/09/2016-06-OWASP-Crypto-Attacks.pdf">[Slides]</a> [Video]</li>
+<li>Liesbeth Kimpen &#8211; Think Villain Proof: <a href="wp-content/uploads/2016/07/AppSecEU2016-Liesbeth-Kimpen-Think-Villain-Proof.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=Nn3xt4ubaW0&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=33">[Video]</a></li>
+<li>Marisa Fagan &#8211; The Cool Factor: <a href="wp-content/uploads/2016/07/AppSecEU2016-Marisa-Fagan-The-Cool-Factor.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=4-nI7zp9Sqc&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=35">[Video]</a></li>
+<li>Matthias Rohr &#8211; Practical Threat Modelling: <a href="wp-content/uploads/2016/07/AppSecEU2016-Matthias-Rohr-Practical-Threat-Modelling.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=C5IPkuDnOGs&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=36">[Video]</a></li>
+<li>Mike West &#8211; Keynote &#8211; Hardening the Web Platform: [Slides] <a href="https://www.youtube.com/watch?v=0qu9oFaHuY0&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=38">[Video]</a></li>
+<li>Rob Van Der Veer &#8211; GriponSSD: <a href="wp-content/uploads/2016/07/AppSecEU2016-Rob-Van-Der-Veer-GriponSSD.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=3JeJm4T9lPo&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=40">[Video]</a></li>
+<li>Sebastian Lekies &#8211; Securing AngularJS Applications: [Slides] <a href="https://www.youtube.com/watch?v=WU0v1y9DQ30&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=42">[Video]</a></li>
+<li>Wojtek Dworakowski &#8211; Internet Banking Safeguards Vulnerabilities: <a href="wp-content/uploads/2016/07/AppSecEU2016-Wojtek-Dworakowski-Internet-Banking-Safeguards-Vulnerabilities.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=OZ5VlHzo8Fs&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=47">[Video]</a></li>
+<li>TonyUV &#8211; Attack Tree Vignette for CaaS: <a href="wp-content/uploads/2016/07/AppSecEU2016-TonyUV-Attack-Tree-Vignette-for-CaaS.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=hHsYuoEYclk&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=46">[Video]</a></li>
+<li>Vaibhav Gupta &#8211; Lightning training &#8211; Security Automation using ZAP: <a href="wp-content/uploads/2016/07/OWASP_AppSec_EU2016-Security_Automation_Using_ZAP_v1.3.pdf">[Slides]</a> [Video]</li>
+<li>Yair Amit &#8211; The Ultimate Reason Why Hackers Are Winning The Mobile Malware Battle: <a href="wp-content/uploads/2016/07/OWASP-AppsecEu_2016-Skycure.pptx">[Slides]</a> <a href="https://www.youtube.com/watch?v=b3LJLYgJukU&amp;list=PLpr-xdpM8wG-Kf1_BOnT2LFZU8_SXfpKL&amp;index=48">[Video]</a></li>
+</ul>
+			</div><!-- .entry-content -->
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<div id="secondary" class="widget-area" role="complementary">
+			<div class="container">
+				<h2 class="widget-title"><span class="wow bounce"> </span></h2>				<div class="carousel clearfix slider">
+											<div class="clearfix">	
+															
+								<a href="http://www8.hp.com/us/en/software-solutions/enterprise-security.html?" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/03/HPEnterprise.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/03/HPEnterprise.png 294w, /wp-content/uploads/2016/03/HPEnterprise-150x57.png 150w, /wp-content/uploads/2016/03/HPEnterprise-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.qualys.com" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2015/12/qualys.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2015/12/qualys.png 294w, /wp-content/uploads/2015/12/qualys-150x57.png 150w, /wp-content/uploads/2015/12/qualys-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.sig.eu/en/themes/it-security" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/04/sig.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/04/sig.png 294w, /wp-content/uploads/2016/04/sig-150x57.png 150w, /wp-content/uploads/2016/04/sig-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.sonatype.com" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/02/sonatype.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/02/sonatype.png 294w, /wp-content/uploads/2016/02/sonatype-150x57.png 150w, /wp-content/uploads/2016/02/sonatype-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.synopsys.com/software/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2015/12/synopsys.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2015/12/synopsys.png 294w, /wp-content/uploads/2015/12/synopsys-150x57.png 150w, /wp-content/uploads/2015/12/synopsys-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.blackducksoftware.com/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2015/12/blackduck.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2015/12/blackduck.png 294w, /wp-content/uploads/2015/12/blackduck-150x57.png 150w, /wp-content/uploads/2015/12/blackduck-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.business-e.it" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/04/Business-E.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/04/Business-E.png 294w, /wp-content/uploads/2016/04/Business-E-150x57.png 150w, /wp-content/uploads/2016/04/Business-E-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.checkmarx.com" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2015/12/checkmarx.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2015/12/checkmarx.png 294w, /wp-content/uploads/2015/12/checkmarx-150x57.png 150w, /wp-content/uploads/2015/12/checkmarx-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.irdeto.com" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/02/irdeto.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/02/irdeto.png 294w, /wp-content/uploads/2016/02/irdeto-150x57.png 150w, /wp-content/uploads/2016/02/irdeto-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://jscrambler.com/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/03/jscrambler.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/03/jscrambler.png 294w, /wp-content/uploads/2016/03/jscrambler-150x57.png 150w, /wp-content/uploads/2016/03/jscrambler-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.rapid7.com" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2015/12/rapid7.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2015/12/rapid7.png 294w, /wp-content/uploads/2015/12/rapid7-150x57.png 150w, /wp-content/uploads/2015/12/rapid7-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.securitycompass.com/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/03/security_compass.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/03/security_compass.png 294w, /wp-content/uploads/2016/03/security_compass-150x57.png 150w, /wp-content/uploads/2016/03/security_compass-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.securityinnovation.com/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/05/securityInnovation.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/05/securityInnovation.png 294w, /wp-content/uploads/2016/05/securityInnovation-150x57.png 150w, /wp-content/uploads/2016/05/securityInnovation-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.whitehatsec.com/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/04/whitehat.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/04/whitehat.png 294w, /wp-content/uploads/2016/04/whitehat-150x57.png 150w, /wp-content/uploads/2016/04/whitehat-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.lsexperts.de/home.html" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/05/LSE.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/05/LSE.png 294w, /wp-content/uploads/2016/05/LSE-150x57.png 150w, /wp-content/uploads/2016/05/LSE-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.mindedsecurity.com" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2015/12/mindedsecurity.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2015/12/mindedsecurity.png 294w, /wp-content/uploads/2015/12/mindedsecurity-150x57.png 150w, /wp-content/uploads/2015/12/mindedsecurity-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.codemotionworld.com/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/05/Codemotion.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/05/Codemotion.png 294w, /wp-content/uploads/2016/05/Codemotion-150x57.png 150w, /wp-content/uploads/2016/05/Codemotion-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.isacaroma.it/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/06/isacaroma.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/06/isacaroma.png 294w, /wp-content/uploads/2016/06/isacaroma-150x57.png 150w, /wp-content/uploads/2016/06/isacaroma-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.isacavenice.org/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/04/isaca_venice.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/04/isaca_venice.png 294w, /wp-content/uploads/2016/04/isaca_venice-150x57.png 150w, /wp-content/uploads/2016/04/isaca_venice-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="https://www.peerlyst.com/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/04/peerlyst.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/04/peerlyst.png 294w, /wp-content/uploads/2016/04/peerlyst-150x57.png 150w, /wp-content/uploads/2016/04/peerlyst-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.unige.it/" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/05/Università-degli-Studi-di-Genova.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/05/Università-degli-Studi-di-Genova.png 294w, /wp-content/uploads/2016/05/Università-degli-Studi-di-Genova-150x57.png 150w, /wp-content/uploads/2016/05/Università-degli-Studi-di-Genova-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+											<div class="clearfix">	
+															
+								<a href="http://www.di.uniroma1.it/it/dipartimento" target="_blank"><img width="294" height="111" src="/wp-content/uploads/2016/05/sapienza.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/wp-content/uploads/2016/05/sapienza.png 294w, /wp-content/uploads/2016/05/sapienza-150x57.png 150w, /wp-content/uploads/2016/05/sapienza-100x38.png 100w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+													</div>
+									</div>				
+			</div>
+						
+		</section>		
+	</div><!-- #secondary -->
+
+		</div><!-- #content -->
+		
+		
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info container">
+</div>
+			</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+<script type='text/javascript' src='wp-content/themes/moesia/js/navigation.js%3Fver=20120206'></script>
+<script type='text/javascript' src='wp-content/themes/moesia/js/skip-link-focus-fix.js%3Fver=20130115'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js%3Fver=4.7.14'></script>
+
+</body>
+</html>
